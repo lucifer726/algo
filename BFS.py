@@ -11,9 +11,6 @@ graph["jonny"] = []
 
 from collections import deque
 
-search_queue = deque()
-search_queue += graph["you"]
-
 
 def search(name):
     search_queue = deque()
@@ -32,6 +29,7 @@ def search(name):
 
 def person_is_seller(name):
     return name[-1] == 'm'
+
 
 if __name__ == '__main__':
     search("you")
